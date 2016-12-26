@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title></title>
+<style>
+*{	margin:0;
+	padding: 0;
+	font-family: Arial;
+	color:#999999;
+	font-size:14px;
+	border:none;}
+ul,li{list-style: none;
+	margin: 0;
+	padding:0;
+	border:none;}
+a{text-decoration: none;
+	cursor:pointer;}
+
+.clear{clear:both;}
+.top{width:1368px;
+	margin:0 auto;
+	padding:33px 0;
+	background: lavender;}
+.logo{width:100px;
+	height:30px;
+	float: left;
+	margin-left: 60px;}
+.logo span{font-size: 30px;
+	color: #7F7777;}
+.logo .yanse{ color:#F45F5B;}
+.top_right{float:right;
+	margin-right:62px;}
+.top_right li{float:left;
+	padding:14px 16px;
+	border-radius: 5px;}
+.top_right li a{margin-bottom: 10px;}
+.top_right .abt:hover{background:#f77b6f;color:#fff;}
+.head{width:1250px;
+	margin:0 auto;
+	background:#475268;
+	padding:0 59px;
+	line-height:116px;}
+.about_us{float:left;
+	font-size:24px;
+	font-weight:bold;
+	color:#fff;
+	font-family: "宋体";}
+.head_r{float:right;
+	color:#f76e6a;
+	font-size:12px;}
+.head_r:hover{color:#fff;}
+.head span{float:right;
+	color:#fff;
+	padding:0 8px;}
+
+.blank{width: 1370px;
+	height:680px;
+	margin: 0 auto;
+	background: lavender;}
+.yi{width: 500px;
+	height: 400px;
+	background: url(images/112.jpg) no-repeat;
+	background-size: 100%;
+	margin-left: 50px;
+	margin-top: 20px;
+	float: left;}
+.er{width: 700px;
+	height: 400px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-size: 30px;}
+.san{width: 650px;
+	height: 200px;
+	float: left;
+	margin-left: 50px;}
+.sw{width: 650px;
+	height: 200px;
+	float: left;}	
+.yuan{width:100px;
+	height:100px;
+	background:url(images/113.jpg) 220px -54px;
+	border-radius: 50%;
+	margin-top: 50px;
+	float: left;}
+.yuan_yi{width:100px;
+	height:100px;
+	background-size: 50px;
+	background:url(images/115.jpg) 128px -54px;
+	border-radius: 50%;
+	margin-top: 50px;
+	float: left;}
+.fen{width: 450px;
+	height: 150px;
+	margin-top: 25px;
+	float: left;
+	margin-left:20px;
+	text-align: center;
+	line-height: 40px;}
+
+.yitu{width: 1370px;
+	height: 500px;
+	background: seashell;
+	margin:0 auto;
+	position: relative;}
+.tu{width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: url(images/114.jpg) no-repeat -24px -68px;
+	position: absolute;
+	left: 50px;
+	top:40px;}
+.lan{width: 500px;
+	height: 100px;
+	position: absolute;
+	left: 50px;
+	top: 300px;
+	line-height: 20px;}
+.biaoge{width: 700px;
+	height: 400px;
+	position: absolute;
+	left: 600px;
+	top: 40px;}
+.timu{width: 200px;
+	height: 50px;
+	font-size: 22px;
+	line-height: 50px;}
+.web{width: 700px;
+	height: 50px;
+	margin-top: 10px;}
+.red{width: 420px;
+	height: 50px;
+	background: #F37D6C;
+	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	line-height: 50px;}
+.white{width: 280px;
+	height: 50px;
+	background: #E1E1E1;
+	float: left;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;}
+.html{width: 700px;
+	height: 50px;
+	margin-top: 30px;}
+.red_yi{width: 630px;
+	height: 50px;
+	background: #F37D6C;
+	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	line-height: 50px;}
+.white_yi{width: 70px;
+	height: 50px;
+	background: #E1E1E1;
+	float: left;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;}
+.word{width: 700px;
+	height: 50px;
+	margin-top: 30px;}
+.red_er{width: 490px;
+	height: 50px;
+	background: #F37D6C;
+	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	line-height: 50px;}
+.white_er{width: 210px;
+	height: 50px;
+	background: #E1E1E1;
+	float: left;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;}
+.graph{width: 700px;
+	height: 50px;
+	margin-top: 30px;}
+.red_san{width: 385px;
+	height: 50px;
+	background: #F37D6C;
+	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	line-height: 50px;}
+.white_san{width: 315px;
+	height: 50px;
+	background: #E1E1E1;
+	float: left;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;}
+.biaoge span{color:#ffffff;
+	margin-left: 10px;}
+
+.foot{background:#475268;
+	padding:52px;
+	margin-top:40px;
+	margin-bottom: 5px;
+	width:1265px;
+	margin:0 auto;}
+.foot p,.foot li{color:#fff;}
+.foot .title{font-family: "宋体";
+	font-size:22px;
+	line-height:36px;}
+.f_left{margin-right:140px;
+	float:left;}
+.f_left .contact li{line-height:28px;}
+.f_left .contact li span{color:#f37569;}
+.f_middle{margin-right:350px;
+	float:left;
+	width:228px;}
+.f_middle .more_l{float:left;
+	color:#fff;
+	line-height:28px;}
+.f_middle .more_r{float:right;
+	color:#fff;
+	line-height:28px;}
+.f_right{float:left;}
+.f_right .stay{margin-top:5px;
+	margin-left: -5px;}
+.f_right .stay li{float:left;
+	width:48px;
+	height: 48px;
+	background:url(images/116.jpg) no-repeat 10px 10px;
+	background-size: 100%;
+	margin:5px;}
+</style>
+</head>
+<body>
+	<div class="top">
+		<div class="logo"><span>Flat</span><span class="yanse">Lab</span></div>
+		<ul class="top_right">
+			<li class="abt">Home</li>
+			<li class="abt">About</li>
+			<li class="abt">Service</li>
+			<li class="abt">Feature</li>
+			<li class="abt">Portfolio</li>
+			<li class="abt">Price</li>
+			<li class="abt">Blog</li>
+			<li class="abt">Contact</li>
+			<li><a href="#"><img src="images/Blog_03.gif"></a></li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+
+	<div class="head">
+		<a class="about_us">ACCOPMANY</a>
+		<a class="head_r">About</a><span>/</span><a class="head_r">Pages</a><span>/</span><a class="head_r">Home</a>
+		<div class="clear"></div>
+	</div>
+
+	<div class="blank">
+		<div class="yi"></div>
+		<div class="er"><span>1、I love you not because of who you are, but because of who I am when I am with you.<br />2、Love is an impossible meeting.For example, I am a bird flying in sky,you are a leopard in forest. We just fall in love accidentally.<br />3、The key for happiness is not to find a perfect person,but find someone and build a perfect relationship with him.<br />4、Why to ask so much when you are in love?The mature never ask the past,the wise never ask the presentand the open-minded never ask the future.<br />5、I miss you so deeply that my love just like a kite has broken its line and won’t stop flying until it reaches you at last.<br />6、You are the one I have been looking for.</span></div>
+		<div class="san">
+			<div class="yuan"></div>
+			<div class="fen"><span>Love, the original is wine, drank drunk;<br />missing,the original is the sea, submerged easily me;<br />you, it is a flower, in my heart already quietly opened.</span></div>
+		</div>
+		<div class="sw">
+			<div class="yuan_yi"></div>
+			<div class="fen"><span>Because of you, I have happy;<br />because of you, I have puzzled;<br />because of you, I have injured;<br /> because of you, this life without any regrets.</span></div>
+		</div><div style="clear:both"></div>
+	</div>
+	
+	<div class="yitu">
+		<div class="tu"></div>
+		<div class="lan">I prefer to organise a fine family with a small cup honesty,kindness,beauty,instead of organising a boring family with several big boat furniture.Home is the place where, when you have to go there, ithas to take you in. We never know the love of the parents until we become parents ourselves.</div>
+		<div class="biaoge">
+			<div class="timu">Our Crazy Skills</div>
+			<div class="web">
+				<div class="red"><span>Web design:60% Complete</span></div>
+				<div class="white"></div>
+			</div>
+			<div class="html">
+				<div class="red_yi"><span>Html/CSS:90% Complete</span></div>
+				<div class="white_yi"></div>
+			</div>
+			<div class="word">
+				<div class="red_er"><span>Wordpress:70% Complete</span></div>
+				<div class="white_er"></div>
+			</div>
+			<div class="graph">
+				<div class="red_san"><span>Graphic Design:55% Complete</span></div>
+				<div class="white_san"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section_1 foot">
+		<div class="f_left">
+			<p class="title">CONTACT INFO</p>
+			<ul class="contact">
+				<li>Address:No.28-63877 street</li>
+				<li>Iorem ipsum city, Country</li>
+				<li>Phone:(123)456-7890</li>
+				<li>Fax:(123)456-7890</li>
+				<li>Email : <span>nicaicaikan@nb.com</span></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="f_middle">
+			<p class="title">LATEST TWEET</p>
+			<span class="more_l">More Templates</span>
+			<span class="more_r">-Collect from</span>
+		</div>
+		<div class="f_right">
+			<p class="title">STAY CONNECTED</p>
+			<ul class="stay">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="stay">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</body>
+</html>

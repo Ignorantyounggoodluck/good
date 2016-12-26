@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+	<title></title>
+<style>
+*{margin:0;
+	padding: 0;
+	color:#999999;
+	border:none;}
+ul,li{list-style: none;
+	margin: 0;
+	padding:0;
+	border:none;}
+a{text-decoration: none;
+	cursor:pointer;}
+
+.clear{clear:both;}
+.top{width:1365px;
+	margin:0 auto;
+	padding:33px 0;
+	background: lavender;}
+.logo{width:100px;
+	height:30px;
+	float: left;
+	margin-left: 60px;}
+.logo span{font-size: 30px;
+	color: #7F7777;}
+.logo .yanse{ color:#F45F5B;}
+.top_right{float:right;
+	margin-right:62px;}
+.top_right li{float:left;
+	padding:14px 16px;
+	border-radius: 5px;}
+.top_right li a{margin-bottom: 10px;}
+.top_right .abt:hover{background:#f77b6f;color:#fff;}
+
+.head{width:1250px;
+	margin:0 auto;
+	background:#475268;
+	padding:0 59px;
+	line-height:116px;}
+.about_us{float:left;
+	font-size:24px;
+	color:#fff;
+	font-family: "宋体";}
+.head_r{float:right;
+	color:#f76e6a;
+	font-size:12px;}
+.head_r:hover{color:#fff;}
+.head span{float:right;
+	color:#fff;
+	padding:0 8px;}
+.blank{width: 1370px;
+	height:480px;
+	margin: 0 auto;}
+.blank .zuo{width: 600px;
+	height: 400px;
+	background:url(images/0.2.jpg) no-repeat;
+	background-size: 100%;
+	float: left;
+	margin-top: 40px;
+	margin-left: 55px;}
+.blank .you{width: 600px;
+	height: 400px;
+	background:url(images/0.4.jpg) no-repeat;
+	background-size: 100%;
+	float: right;
+	margin-top: 40px;
+	margin-right: 55px;}
+
+.san{width:1365px;
+	height:950px;
+	background: lavender;
+	margin:0 auto ;
+	padding-top: 20px;}
+.shang{width:800px;
+	height: 150px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	font-family: "宋体";
+	margin-top: 60px;}
+.xia_one{width: 300px;
+	height: 660px;
+	background: #EEEEEE;
+	margin-left:40px;
+	float: left;
+	margin-top: 20px;}
+.yige{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;}
+.erge{width: 300px;
+	height: 130px;
+	text-align: center;
+	line-height: 130px;
+	background: #777777;
+	color: #ffffff;
+	font-size: 40px;} 
+.sange{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted;}
+.sige{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted;} 
+.wuge{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted;}
+.liuge{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted;} 
+.qige{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted;}
+.bage{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted;}
+.jiuge{width: 250px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	margin-left: 25px;}
+.xia_er{width: 300px;
+	height: 660px;
+	background: #EEEEEE;
+	margin-left:40px;
+	float: left;
+	margin-top: 20px;}
+.xia_san{width: 300px;
+	height: 700px;
+	background: #F77B6F;
+	color: #fff;
+	margin-left:40px;
+	float: left;
+	}
+.yi_yige{width: 250px;
+	height: 85px;
+	text-align: center;
+	color: #fff;
+	line-height: 85px;
+	margin-left: 25px;}
+.yi_sange{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted #999999;}
+.yi_sige{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted #999999;} 
+.yi_wuge{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted #999999;}
+.yi_liuge{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted #999999;} 
+.yi_qige{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted #999999;}
+.yi_bage{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;
+	border-bottom: 1px dotted #999999;}
+.yi_jiuge{width: 250px;
+	height: 65px;
+	text-align: center;
+	color: #fff;
+	line-height: 65px;
+	margin-left: 25px;}
+.xia_s{width: 300px;
+	height: 660px;
+	background: #EEEEEE;
+	margin-left:40px;
+	float: left;
+	margin-top: 20px;}
+
+.foot{background:#475268;
+	padding:52px;
+	margin-top:40px;
+	margin-bottom: 5px;
+	width:1265px;
+	margin:0 auto;}
+.foot p,.foot li{color:#fff;}
+.foot .title{font-family: "宋体";
+	font-size:22px;
+	line-height:36px;}
+.f_left{margin-right:140px;
+	float:left;}
+.f_left .contact li{line-height:28px;}
+.f_left .contact li span{color:#f37569;}
+.f_middle{margin-right:350px;
+	float:left;
+	width:228px;}
+.f_middle .more_l{float:left;
+	color:#fff;
+	line-height:28px;}
+.f_middle .more_r{float:right;
+	color:#fff;
+	line-height:28px;}
+.f_right{float:left;}
+.f_right .stay{margin-top:5px;
+	margin-left: -5px;}
+.f_right .stay li{float:left;
+	width:48px;
+	height: 48px;
+	background:url(images/1.png) no-repeat;
+	background-size: 100%;
+	margin:5px;}
+</style>
+</head>
+<body>
+<div class="top">
+		<div class="logo"><span>Flat</span><span class="yanse">Lab</span></div>
+		<ul class="top_right">
+			<li class="abt">Home</li>
+			<li class="abt">About</li>
+			<li class="abt">Service</li>
+			<li class="abt">Feature</li>
+			<li class="abt">Portfolio</li>
+			<li class="abt">Price</li>
+			<li class="abt">Blog</li>
+			<li class="abt">Contact</li>
+			<li><a href="#"><img src="images/Blog_03.gif"></a></li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>                                                                                 
+	<div class="head">
+		<a class="about_us">PRICING  TABLE</a>
+		<a class="head_r">About</a><span>/</span><a class="head_r">Pages</a><span>/</span><a class="head_r">Home</a>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="san">
+		<div class="shang"><h1>30 DAYS FREE TRIAL ON ALL ACCOUNTS</h1><br />
+							<span>No risk.No hidden fees.Cancel at anytime.</span></div>
+		<div class="xia_one">
+				<div class="yige">Diamond</div>
+				<div class="erge">$4000</div>
+				<div class="sange">8 hours coverage</div>
+				<div class="sige">500 digital images</div>
+				<div class="wuge">100 A3 Hard Copy</div>
+				<div class="liuge">Bridal portrait with 11X14</div>
+				<div class="qige">Engagement portrait with 11X14</div>
+				<div class="bage">Income Tax included</div>
+				<div class="jiuge"></div>
+		</div>
+		<div class="xia_er">
+				<div class="yige">Platinum</div>
+				<div class="erge">$3000</div>
+				<div class="sange">8 hours coverage</div>
+				<div class="sige">500 digital images</div>
+				<div class="wuge">100 A3 Hard Copy</div>
+				<div class="liuge">Bridal portrait with 11X14</div>
+				<div class="qige">Engagement portrait with 11X14</div>
+				<div class="bage">Income Tax included</div>
+				<div class="jiuge"></div>
+		</div>
+		
+		<div class="xia_san">
+				<div class="yi_yige">Gold</div>
+				<div class="erge">$2000</div>
+				<div class="yi_sange">8 hours coverage</div>
+				<div class="yi_sige">500 digital images</div>
+				<div class="yi_wuge">100 A3 Hard Copy</div>
+				<div class="yi_liuge">Bridal portrait with 11X14</div>
+				<div class="yi_qige">Engagement portrait with 11X14</div>
+				<div class="yi_bage">Income Tax included</div>
+				<div class="yi_jiuge"></div>
+		</div>
+		<div class="xia_s">
+				<div class="yige">Silver</div>
+				<div class="erge">$1500</div>
+				<div class="sange">8 hours coverage</div>
+				<div class="sige">500 digital images</div>
+				<div class="wuge">100 A3 Hard Copy</div>
+				<div class="liuge">Bridal portrait with 11X14</div>
+				<div class="qige">Engagement portrait with 11X14</div>
+				<div class="bage">Income Tax included</div>
+				<div class="jiuge"></div>
+		</div>
+	</div>
+
+	<div class="section_1 foot">
+		<div class="f_left">
+			<p class="title">CONTACT INFO</p>
+			<ul class="contact">
+				<li>Address:No.28-63877 street</li>
+				<li>Iorem ipsum city, Country</li>
+				<li>Phone:(123)456-7890</li>
+				<li>Fax:(123)456-7890</li>
+				<li>Email : <span>nicaicaikan@nb.com</span></li>
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+		<div class="f_middle">
+			<p class="title">LATEST TWEET</p>
+			<span class="more_l">More Templates</span>
+			<span class="more_r">-Collect from</span>
+		</div>
+		<div class="f_right">
+			<p class="title">STAY CONNECTED</p>
+			<ul class="stay">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="stay">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</body>
+</html>

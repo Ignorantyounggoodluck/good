@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title></title>
+<style>
+*{	margin:0;
+	padding: 0;
+	font-family: Arial;
+	color:#999999;
+	font-size:14px;
+	border:none;}
+ul,li{list-style: none;
+	margin: 0;
+	padding:0;
+	border:none;}
+a{text-decoration: none;
+	cursor:pointer;}
+
+.clear{clear:both;}
+.top{width:1368px;
+	margin:0 auto;
+	padding:33px 0;
+	background: lavender;}
+.logo{width:100px;
+	height:30px;
+	float: left;
+	margin-left: 60px;}
+.logo span{font-size: 30px;
+	color: #7F7777;}
+.logo .yanse{ color:#F45F5B;}
+.top_right{float:right;
+	margin-right:62px;}
+.top_right li{float:left;
+	padding:14px 16px;
+	border-radius: 5px;}
+.top_right li a{margin-bottom: 10px;}
+.top_right .abt:hover{background:#f77b6f;color:#fff;}
+.head{width:1250px;
+	margin:0 auto;
+	background:#475268;
+	padding:0 59px;
+	line-height:116px;}
+.about_us{float:left;
+	font-size:24px;
+	font-weight:bold;
+	color:#fff;
+	font-family: "宋体";}
+.head_r{float:right;
+	color:#f76e6a;
+	font-size:12px;}
+.head_r:hover{color:#fff;}
+.head span{float:right;
+	color:#fff;
+	padding:0 8px;}
+
+.neirong{width: 1366px;
+	height:3350px;
+	margin: 0 auto;
+	position: relative;}
+.zuoce_yi{width: 150px;
+	height: 80px;
+	background: #F77B6F;
+	margin-left: 50px;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 80px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;}
+.zuoce_yi span{color: #fff;
+	font-size:38px;}
+.zuoce_er{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_er span{font-size: 24px;}
+.zuoce_san{width: 150px;
+	height: 60px;
+	background: #EFEEE9;
+	margin-left: 50px;
+	margin-top: 20px;}
+.zuoce_sw{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_wu{width:75px;
+	height: 20px;
+	margin-left: 125px;
+	margin-top: 80px;}
+.zuoce_wu span{font-size: 18px;}
+.zuoce_wu .yanse{color: #F77B6F;}
+.zuoce_liu{width: 70px;
+	height: 65px;
+	margin-left: 130px;
+	margin-top: 40px;}
+.zuoce_liu span{float: right;}
+.zuoce_qi{width: 70px;
+	height: 50px;
+	line-height: 30px;
+	margin-left: 130px;
+	margin-top: 20px;}
+.zuoce_qi span{float: right;
+	color:  #F77B6F;}
+.zhong{width: 655px;
+	height: 300px;
+	background: url(images/116.jpg) no-repeat -514px -94px;
+	position: absolute;
+	top: 40px;
+	left: 255px;}
+.zhong_yi{width: 650px;
+	height:80px;
+	position: absolute;
+	left: 255px;
+	top: 353px;}
+.zhong_yi span{font-size: 24px;
+	line-height: 40px;
+	color: #F77B6F;}
+.ai{width: 650px;
+	height: 100px;
+	position: absolute;
+	left: 255px;
+	top: 455px;
+	line-height: 20px;
+	color: #797979;}
+.an{width: 150px;
+	height: 50px;
+	background: #FF6C60;
+	position: absolute;
+	top: 550px;
+	left: 255px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size:20px; }
+.xu{width: 858px;
+	height: 50px;
+	position: absolute;
+	top: 590px;
+	left: 50px;
+	border-bottom: 1px dotted;}
+
+.dier{width: 920px;
+	height: 634px;
+	position: absolute;
+	top: 645px;
+	left: 0px;}
+.zuoce_yi{width: 150px;
+	height: 80px;
+	background: #F77B6F;
+	margin-left: 50px;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 80px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;}
+.zuoce_yi span{color: #fff;
+	font-size:38px;}
+.zuoce_er{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_er span{font-size: 24px;}
+.zuoce_san{width: 150px;
+	height: 60px;
+	background: #EFEEE9;
+	margin-left: 50px;
+	margin-top: 20px;}
+.zuoce_sw{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_wu{width:75px;
+	height: 20px;
+	margin-left: 125px;
+	margin-top: 80px;}
+.zuoce_wu span{font-size: 18px;}
+.zuoce_wu .yanse{color: #F77B6F;}
+.zuoce_liu{width: 70px;
+	height: 65px;
+	margin-left: 130px;
+	margin-top: 40px;}
+.zuoce_liu span{float: right;}
+.zuoce_qi{width: 70px;
+	height: 50px;
+	line-height: 30px;
+	margin-left: 130px;
+	margin-top: 20px;}
+.zuoce_qi span{float: right;
+	color:  #F77B6F;}
+.zhong_er{width: 655px;
+	height: 300px;
+	background: url(images/117.jpg);
+	background-size:100%;
+	position: absolute;
+	top: 38px;
+	left: 255px;}
+.zhong_err{width: 650px;
+	height:80px;
+	position: absolute;
+	left: 255px;
+	top: 360px;}
+.zhong_err span{font-size: 24px;
+	line-height: 40px;
+	color: #F77B6F;}
+.ai_er{width: 650px;
+	height: 100px;
+	position: absolute;
+	left: 255px;
+	top: 455px;
+	line-height: 20px;
+	color: #797979;}
+.an_er{width: 150px;
+	height: 50px;
+	background: #FF6C60;
+	position: absolute;
+	top: 555px;
+	left: 255px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size:20px; }
+.xu_er{width: 858px;
+	height: 50px;
+	position: absolute;
+	top: 595px;
+	left: 50px;
+	border-bottom: 1px dotted;}
+
+.disan{width: 920px;
+	height: 634px;
+	position: absolute;
+	top: 1290px;
+	left: 0px;}
+.zuoce_yi{width: 150px;
+	height: 80px;
+	background: #F77B6F;
+	margin-left: 50px;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 80px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;}
+.zuoce_yi span{color: #fff;
+	font-size:38px;}
+.zuoce_er{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_er span{font-size: 24px;}
+.zuoce_san{width: 150px;
+	height: 60px;
+	background: #EFEEE9;
+	margin-left: 50px;
+	margin-top: 20px;}
+.zuoce_sw{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_wu{width:75px;
+	height: 20px;
+	margin-left: 125px;
+	margin-top: 80px;}
+.zuoce_wu span{font-size: 18px;}
+.zuoce_wu .yanse{color: #F77B6F;}
+.zuoce_liu{width: 70px;
+	height: 65px;
+	margin-left: 130px;
+	margin-top: 40px;}
+.zuoce_liu span{float: right;}
+.zuoce_qi{width: 70px;
+	height: 50px;
+	line-height: 30px;
+	margin-left: 130px;
+	margin-top: 20px;}
+.zuoce_qi span{float: right;
+	color:  #F77B6F;}
+.zhong_san{width: 655px;
+	height: 300px;
+	background: url(images/118.jpg) no-repeat 0px -115px;
+	background-size:100%;
+	position: absolute;
+	top: 38px;
+	left: 255px;}
+.zhong_sann{width: 650px;
+	height:80px;
+	position: absolute;
+	left: 255px;
+	top: 360px;}
+.zhong_sann span{font-size: 24px;
+	line-height: 40px;
+	color: #F77B6F;}
+.ai_san{width: 650px;
+	height: 100px;
+	position: absolute;
+	left: 255px;
+	top: 455px;
+	line-height: 20px;
+	color: #797979;}
+.an_san{width: 150px;
+	height: 50px;
+	background: #FF6C60;
+	position: absolute;
+	top: 555px;
+	left: 255px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size:20px; }
+.xu_san{width: 858px;
+	height: 50px;
+	position: absolute;
+	top: 595px;
+	left: 50px;
+	border-bottom: 1px dotted;}
+
+.disw{width: 920px;
+	height: 634px;
+	position: absolute;
+	top: 1935px;
+	left: 0px;}
+.zuoce_yi{width: 150px;
+	height: 80px;
+	background: #F77B6F;
+	margin-left: 50px;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 80px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;}
+.zuoce_yi span{color: #fff;
+	font-size:38px;}
+.zuoce_er{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_er span{font-size: 24px;}
+.zuoce_san{width: 150px;
+	height: 60px;
+	background: #EFEEE9;
+	margin-left: 50px;
+	margin-top: 20px;}
+.zuoce_sw{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_wu{width:75px;
+	height: 20px;
+	margin-left: 125px;
+	margin-top: 80px;}
+.zuoce_wu span{font-size: 18px;}
+.zuoce_wu .yanse{color: #F77B6F;}
+.zuoce_liu{width: 70px;
+	height: 65px;
+	margin-left: 130px;
+	margin-top: 40px;}
+.zuoce_liu span{float: right;}
+.zuoce_qi{width: 70px;
+	height: 50px;
+	line-height: 30px;
+	margin-left: 130px;
+	margin-top: 20px;}
+.zuoce_qi span{float: right;
+	color:  #F77B6F;}
+.zhong_sw{width: 655px;
+	height: 300px;
+	background: url(images/122.jpg) no-repeat 0px -158px;
+	background-size:100%;
+	position: absolute;
+	top: 38px;
+	left: 255px;}
+.zhong_sww{width: 650px;
+	height:80px;
+	position: absolute;
+	left: 255px;
+	top: 360px;}
+.zhong_sww span{font-size: 24px;
+	line-height: 40px;
+	color: #F77B6F;}
+.ai_sw{width: 650px;
+	height: 100px;
+	position: absolute;
+	left: 255px;
+	top: 455px;
+	line-height: 20px;
+	color: #797979;}
+.an_sw{width: 150px;
+	height: 50px;
+	background: #FF6C60;
+	position: absolute;
+	top: 555px;
+	left: 255px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size:20px; }
+.xu_sw{width: 858px;
+	height: 50px;
+	position: absolute;
+	top: 595px;
+	left: 50px;
+	border-bottom: 1px dotted;}
+
+.diwu{width: 920px;
+	height: 634px;
+	position: absolute;
+	top: 2580px;
+	left: 0px;}
+.zuoce_yi{width: 150px;
+	height: 80px;
+	background: #F77B6F;
+	margin-left: 50px;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 80px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;}
+.zuoce_yi span{color: #fff;
+	font-size:38px;}
+.zuoce_er{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_er span{font-size: 24px;}
+.zuoce_san{width: 150px;
+	height: 60px;
+	background: #EFEEE9;
+	margin-left: 50px;
+	margin-top: 20px;}
+.zuoce_sw{width: 150px;
+	height: 50px;
+	background: #F6F5F0;
+	margin-left: 50px;
+	text-align: center;
+	line-height: 50px;}
+.zuoce_wu{width:75px;
+	height: 20px;
+	margin-left: 125px;
+	margin-top: 80px;}
+.zuoce_wu span{font-size: 18px;}
+.zuoce_wu .yanse{color: #F77B6F;}
+.zuoce_liu{width: 70px;
+	height: 65px;
+	margin-left: 130px;
+	margin-top: 40px;}
+.zuoce_liu span{float: right;}
+.zuoce_qi{width: 70px;
+	height: 50px;
+	line-height: 30px;
+	margin-left: 130px;
+	margin-top: 20px;}
+.zuoce_qi span{float: right;
+	color:  #F77B6F;}
+.zhong_wu{width: 655px;
+	height: 300px;
+	background: url(images/123.jpg) no-repeat 0px -73px;
+	background-size:100%;
+	position: absolute;
+	top: 38px;
+	left: 255px;}
+.zhong_wuu{width: 650px;
+	height:80px;
+	position: absolute;
+	left: 255px;
+	top: 360px;}
+.zhong_wuu span{font-size: 24px;
+	line-height: 40px;
+	color: #F77B6F;}
+.ai_wu{width: 650px;
+	height: 100px;
+	position: absolute;
+	left: 255px;
+	top: 455px;
+	line-height: 20px;
+	color: #797979;}
+.an_wu{width: 150px;
+	height: 50px;
+	background: #FF6C60;
+	position: absolute;
+	top: 555px;
+	left: 255px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size:20px; }
+.xu_wu{width: 858px;
+	height: 50px;
+	position: absolute;
+	top: 595px;
+	left: 50px;
+	border-bottom: 1px dotted;}
+
+.you_yi{width: 350px;
+	height:50px;
+	border: 1px solid #E2E2E4;
+	position: absolute;
+	top:40px;
+	right: 70px;
+	line-height: 50px;
+	border-radius: 5px;}
+.you_yi span{font-size: 28px;
+	color: #E2E2E4;
+	margin-left: 20px;}
+.you_er{width: 350px;
+	height:300px;
+	position: absolute;
+	top: 110px;
+	right: 70px;}
+.one{width: 350px;
+	height:50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-family: "宋体";}
+.two{width: 350px;
+	height: 40px;
+	border-bottom: 1px solid #EFEFEF;
+	line-height: 40px;
+	padding-left: 20px;
+	font-family: "宋体";}
+.three{width: 350px;
+	height: 40px;
+	border-bottom: 1px solid #EFEFEF;
+	line-height: 40px;
+	padding-left: 20px;
+	font-family: "宋体";}
+.four{width: 350px;
+	height: 40px;
+	border-bottom: 1px solid #EFEFEF;
+	line-height: 40px;
+	padding-left: 20px;
+	font-family: "宋体";}
+.five{width: 350px;
+	height: 40px;
+	border-bottom: 1px solid #EFEFEF;
+	line-height: 40px;
+	padding-left: 20px;
+	font-family: "宋体";}
+.six{width: 350px;
+	height: 40px;
+	border-bottom: 1px solid #EFEFEF;
+	line-height: 40px;
+	padding-left: 20px;
+	font-family: "宋体";}
+.zhanshi{width: 350px;
+	height: 400px;
+	position: absolute;
+	top: 415px;
+	right: 70px;}
+.biao{width: 350px;
+	height: 50px;
+	line-height: 50px;
+	font-family: "宋体";
+	font-size: 24px;}
+.chanpin{width: 350px;
+	height: 100px;}    
+.tu{width: 100px;
+	height: 100px;
+	background: url(images/120.jpg) no-repeat 0px 13px;
+	background-size:100%;
+	float: left;}
+.zi{width: 220px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;}
+.chanpin_yi{width: 350px;
+	height: 100px;
+	margin-top: 20px;}
+.tu_yi{width: 100px;
+	height: 100px;
+	background: url(images/121.jpg) no-repeat 0px 13px;
+	background-size:100%;
+	float: left;}
+.zi_yi{width: 220px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;}
+.chanpin_er{width: 350px;
+	height: 100px;
+	margin-top: 20px;}
+.tu_er{width: 100px;
+	height: 100px;
+	background: url(images/124.jpg) no-repeat 15px 16px;
+	background-size:135%;
+	float: left;}
+.zi_er{width: 220px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;}
+.xuanze{width: 350px;
+	height: 400px;
+	position: absolute;
+	top: 840px;
+	right: 70px;}
+.ti{width: 350px;
+	height: 50px;
+	line-height: 50px;
+	font-family: "宋体";
+	font-size: 24px;}
+.flat{width: 50px;
+	height: 50px;
+	border: 1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	border-radius: 5px;}
+.clean{width: 70px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+.admin{width: 90px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+.ui{width: 30px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+.responsive{width: 110px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	border-radius: 5px;}
+.web{width: 110px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+.uix{width: 50px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+.blog{width: 60px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	border-radius: 5px;}
+.flta{width: 110px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+.dash{width: 110px;
+	height: 50px;
+	border :1px solid #E8E8E8;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 5px;}
+
+.lunbo{width: 356px;
+	height: 50px;
+	border: 1px solid;
+	position: absolute;
+	top: 3235px;
+	left: 460px;}
+.lunbo div{width: 50px;
+	height: 50px;
+	border-right: 1px solid;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	cursor:pointer;}
+.lunbo .shu:hover{background: #FF6C60;
+	color: #fff;}
+.lunbo span{margin-left: 20px;
+	line-height: 50px;}
+
+.foot{background:#475268;
+	padding:52px;
+	margin-top:40px;
+	margin-bottom: 5px;
+	width:1265px;
+	margin:0 auto;}
+.foot p,.foot li{color:#fff;}
+.foot .title{font-family: "宋体";
+	font-size:22px;
+	line-height:36px;}
+.f_left{margin-right:140px;
+	float:left;}
+.f_left .contact li{line-height:28px;}
+.f_left .contact li span{color:#f37569;}
+.f_middle{margin-right:350px;
+	float:left;
+	width:228px;}
+.f_middle .more_l{float:left;
+	color:#fff;
+	line-height:28px;}
+.f_middle .more_r{float:right;
+	color:#fff;
+	line-height:28px;}
+.f_right{float:left;}
+.f_right .stay{margin-top:5px;
+	margin-left: -5px;}
+.f_right .stay li{float:left;
+	width:48px;
+	height: 48px;
+	background:url(images/0.4.jpg) no-repeat;
+	background-size: 100%;
+	margin:5px;}
+</style>
+</head>
+<body>
+	<div class="top">
+		<div class="logo"><span>Flat</span><span class="yanse">Lab</span></div>
+		<ul class="top_right">
+			<li class="abt">Home</li>
+			<li class="abt">About</li>
+			<li class="abt">Service</li>
+			<li class="abt">Feature</li>
+			<li class="abt">Portfolio</li>
+			<li class="abt">Price</li>
+			<li class="abt">Blog</li>
+			<li class="abt">Contact</li>
+			<li><a href="#"><img src="images/Blog_03.gif"></a></li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+
+	<div class="head">
+		<a class="about_us">BLOG</a>
+		<a class="head_r">About</a><span>/</span><a class="head_r">Pages</a><span>/</span><a class="head_r">Home</a>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="neirong">
+			<div class="zuoce_yi"><span>10</span></div>
+			<div class="zuoce_er"><span>September</span></div>
+			<div class="zuoce_san"></div>
+			<div class="zuoce_sw"><span>15</span></div>
+			<div class="zuoce_wu"><span>By</span><span class="yanse">Admin</span></div>
+			<div class="zuoce_liu"><span>travel</span><br /><span>tour</span><br /><span>recreation</span><br /><span>tourism</span></div>
+			<div class="zuoce_qi"><span>209 View</span><br /><span>23 Share</span></div>
+			<div class="zhong"></div>
+			<div class="zhong_yi"><span>The key for happiness is not to find a perfect person,but find someone and build a perfect relationship with him.</span></div>
+			<div class="ai">No matter the ending is perfect or not, you cannot disappear from my world.Why I have never catched the happiness? Whenever I want you ,I will be accompanyed by the memory of...  to feel the flame of dreaming and to feel the moment of dancing,when all the romance is far away,the eternity is always there Eternity is not a distance but a decision.</div>
+			<div class="an">Love never dies</div>
+			<div class="xu"></div>
+
+		<div class="dier">
+			<div class="zuoce_yi"><span>15</span></div>
+			<div class="zuoce_er"><span>September</span></div>
+			<div class="zuoce_san"></div>
+			<div class="zuoce_sw"><span>15</span></div>
+			<div class="zuoce_wu"><span>By</span><span class="yanse">Admin</span></div>
+			<div class="zuoce_liu"><span>travel</span><br /><span>tour</span><br /><span>recreation</span><br /><span>tourism</span></div>
+			<div class="zuoce_qi"><span>209 View</span><br /><span>23 Share</span></div>
+			<div class="zhong_er"></div>
+			<div class="zhong_err"><span>The key for happiness is not to find a perfect person,but find someone and build a perfect relationship with him.</span></div>
+			<div class="ai_er">No matter the ending is perfect or not, you cannot disappear from my world.Why I have never catched the happiness? Whenever I want you ,I will be accompanyed by the memory of...  to feel the flame of dreaming and to feel the moment of dancing,when all the romance is far away,the eternity is always there Eternity is not a distance but a decision.</div>
+			<div class="an_er">Love never dies</div>
+			<div class="xu_er"></div>
+		</div>
+
+		<div class="disan">
+			<div class="zuoce_yi"><span>95</span></div>
+			<div class="zuoce_er"><span>September</span></div>
+			<div class="zuoce_san"></div>
+			<div class="zuoce_sw"><span>15</span></div>
+			<div class="zuoce_wu"><span>By</span><span class="yanse">Admin</span></div>
+			<div class="zuoce_liu"><span>travel</span><br /><span>tour</span><br /><span>recreation</span><br /><span>tourism</span></div>
+			<div class="zuoce_qi"><span>209 View</span><br /><span>23 Share</span></div>
+			<div class="zhong_san"></div>
+			<div class="zhong_sann"><span>The key for happiness is not to find a perfect person,but find someone and build a perfect relationship with him.</span></div>
+			<div class="ai_san">No matter the ending is perfect or not, you cannot disappear from my world.Why I have never catched the happiness? Whenever I want you ,I will be accompanyed by the memory of...  to feel the flame of dreaming and to feel the moment of dancing,when all the romance is far away,the eternity is always there Eternity is not a distance but a decision.</div>
+			<div class="an_san">Love never dies</div>
+			<div class="xu_san"></div>
+		</div>
+
+		<div class="disw">
+			<div class="zuoce_yi"><span>01</span></div>
+			<div class="zuoce_er"><span>September</span></div>
+			<div class="zuoce_san"></div>
+			<div class="zuoce_sw"><span>15</span></div>
+			<div class="zuoce_wu"><span>By</span><span class="yanse">Admin</span></div>
+			<div class="zuoce_liu"><span>travel</span><br /><span>tour</span><br /><span>recreation</span><br /><span>tourism</span></div>
+			<div class="zuoce_qi"><span>209 View</span><br /><span>23 Share</span></div>
+			<div class="zhong_sw"></div>
+			<div class="zhong_sww"><span>The key for happiness is not to find a perfect person,but find someone and build a perfect relationship with him.</span></div>
+			<div class="ai_sw">No matter the ending is perfect or not, you cannot disappear from my world.Why I have never catched the happiness? Whenever I want you ,I will be accompanyed by the memory of...  to feel the flame of dreaming and to feel the moment of dancing,when all the romance is far away,the eternity is always there Eternity is not a distance but a decision.</div>
+			<div class="an_sw">Love never dies</div>
+			<div class="xu_sw"></div>
+		</div>
+
+		<div class="diwu">
+			<div class="zuoce_yi"><span>26</span></div>
+			<div class="zuoce_er"><span>September</span></div>
+			<div class="zuoce_san"></div>
+			<div class="zuoce_sw"><span>15</span></div>
+			<div class="zuoce_wu"><span>By</span><span class="yanse">Admin</span></div>
+			<div class="zuoce_liu"><span>travel</span><br /><span>tour</span><br /><span>recreation</span><br /><span>tourism</span></div>
+			<div class="zuoce_qi"><span>209 View</span><br /><span>23 Share</span></div>
+			<div class="zhong_wu"></div>
+			<div class="zhong_wuu"><span>The key for happiness is not to find a perfect person,but find someone and build a perfect relationship with him.</span></div>
+			<div class="ai_wu">No matter the ending is perfect or not, you cannot disappear from my world.Why I have never catched the happiness? Whenever I want you ,I will be accompanyed by the memory of...  to feel the flame of dreaming and to feel the moment of dancing,when all the romance is far away,the eternity is always there Eternity is not a distance but a decision.</div>
+			<div class="an_wu">Love never dies</div>
+			<div class="xu_wu"></div>
+		</div>
+
+		<div class="you_yi"><span>Accompany</span></div>
+		<div class="you_er">
+			<div class="one">Categories</div>
+			<div class="two">Animals</div>
+			<div class="three">Landscape</div>
+			<div class="four">Portait</div>
+			<div class="five">Wild Life</div>
+			<div class="six">Video</div>
+		</div>
+		<div class="zhanshi">
+			<div class="biao">Latest Blog Post</div>
+			<div class="chanpin">
+				<div class="tu"></div>
+				<div class="zi">Do you know there is someone thinking of you and caring you all the time Your smiling eyes are just like the sparkling stars hanging on the curtain of my heart.</div>
+			</div>
+			<div class="chanpin_yi">
+				<div class="tu_yi"></div>
+				<div class="zi_yi">Do you understand the feeling of missing someone It is just like that you will spend a long hard time to turn the ice-cold water you have drunk into tears.</div>
+			</div>
+			<div class="chanpin_er">
+				<div class="tu_er"></div>
+				<div class="zi_er">Listening to my heart beating. Seeing how much I love you ,I dare to admit how much I love you .When thinking of you, I hope you can receive the passionat words I left for you!</div>
+			</div>
+		</div>
+		<div class="xuanze">
+			<div class="ti">Tags</div>
+			<div class="flat">flat</div>
+			<div class="clean">clean</div>
+			<div class="admin">admin</div>
+			<div class="ui">Ui</div>
+			<div class="responsive">responsive</div>
+			<div class="web">Web Design</div>
+			<div class="uix">Uix</div>
+			<div class="blog">Blog</div>
+			<div class="flta">flat Admin</div>
+			<div class="dash">Dashboard</div>
+		</div>
+
+		<div class="lunbo">
+			<div><<</div>
+			<div class="shu">1</div>
+			<div class="shu">2</div>
+			<div class="shu">3</div>
+			<div class="shu">4</div>
+			<div class="shu">5</div>
+			<span>>></span>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="f_left">
+			<p class="title">CONTACT INFO</p>
+			<ul class="contact">
+				<li>Address:No.28-63877 street</li>
+				<li>Iorem ipsum city, Country</li>
+				<li>Phone:(123)456-7890</li>
+				<li>Fax:(123)456-7890</li>
+				<li>Email : <span>nicaicaikan@nb.com</span></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="f_middle">
+			<p class="title">LATEST TWEET</p>
+			<span class="more_l">More Templates</span>
+			<span class="more_r">-Collect from</span>
+		</div>
+		<div class="f_right">
+			<p class="title">STAY CONNECTED</p>
+			<ul class="stay">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="stay">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</body>
+</html>
